@@ -18,7 +18,7 @@ main {
 .grid-item {
   background-color: #73877b;
   border: solid 5px #73877b;
-  /* this follow line is from chatgpt*/
+  /* this following line is from chatgpt*/
   aspect-ratio: 1 / 1;
 }
 

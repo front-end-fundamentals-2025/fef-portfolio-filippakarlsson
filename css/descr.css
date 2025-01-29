@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  aspect-ratio: 1/1;
 }
 
 .brand-container {
@@ -45,6 +44,22 @@ a {
 /* For small screens */
 @media (max-width: 1193px) {
   .brand-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
+/* For medium screens */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For small screens */
+@media (max-width: 1193px) {
+  .container {
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;

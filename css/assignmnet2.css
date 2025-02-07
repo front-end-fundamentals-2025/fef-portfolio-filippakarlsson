@@ -6,11 +6,9 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
   gap: 20px;
   justify-content: center;
   align-items: center;
-  height: auto;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -20,6 +18,19 @@ main {
   border: solid 5px #73877b;
   /* this following line is from chatgpt*/
   aspect-ratio: 1 / 1;
+  opacity: 0;
+  animation: fadeInAndScale 1.5s ease-in forwards;
+}
+/*animation keyframes*/
+@keyframes fadeInAndScale {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 h1 {
@@ -56,7 +67,7 @@ a {
   text-decoration: none;
   color: #f5e4d7;
 }
-
+/*responsive design*/
 @media (max-width: 1024px) {
   main {
     grid-template-columns: repeat(2, 1fr);

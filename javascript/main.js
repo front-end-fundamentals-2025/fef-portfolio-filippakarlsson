@@ -15,7 +15,7 @@ function getRandomColor() {
 
 buttonElement.addEventListener("click", function () {
   const enteredFun = inputElement.value;
-  headingElement.innerText = "Yes I like to do " + enteredFun + " as well";
+  headingElement.innerText = " I like to do " + enteredFun + " as well";
 });
 
 funButton.addEventListener("click", function () {

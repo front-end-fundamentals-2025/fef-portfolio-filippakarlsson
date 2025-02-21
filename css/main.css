@@ -37,7 +37,6 @@ h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #f5e4d7;
-  transition: color 0.5s ease-in-out;
 }
 /*animation keyframes*/
 @keyframes rainbowText {
@@ -62,7 +61,7 @@ h1 {
 }
 
 h1:hover {
-  animation: rainbowText 2s infinite linear;
+  animation: rainbowText 2s infinite ease-in;
 }
 
 nav {
@@ -104,4 +103,51 @@ a {
   main {
     grid-template-columns: 1fr;
   }
+}
+
+#fun-button {
+  display: block;
+  margin: 50px auto;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#fun-button:hover {
+  background-color: rebeccapurple;
+  transform: scale(1.1);
+}
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+#fun-text {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+
+  border: none;
+  border-radius: 10px;
+}
+
+#enter-button {
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #73877b;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }

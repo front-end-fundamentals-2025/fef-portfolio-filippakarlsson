@@ -6,6 +6,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
     <script src="javascript/main.js" defer></script>
+    <!-- i got the confetti from https://www.jsdelivr.com/package/npm/canvas-confetti -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"
+      defer=""
+    ></script>
   </head>
   <body>
     <nav>
@@ -38,7 +43,10 @@
       </div>
     </main>
     <button id="fun-button">Click me if you like fun</button>
-    <h1 id="fun-head">What fun do you like to have?</h1>
-    <input type="text" id="fun-text" /> <button id="enter-button">enter</button>
+    <div class="input-container">
+      <h1 id="fun-head">What fun do you like to have?</h1>
+      <input type="text" id="fun-text" placeholder="write one word" />
+      <button id="enter-button">enter</button>
+    </div>
   </body>
 </html>
